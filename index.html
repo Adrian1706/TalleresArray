@@ -9,7 +9,10 @@
 <body>
     <h1>Sistema Solar</h1>
     <form action="array.php" method="POST">
-    <input type="number" placeholder="Ingrese el numero de planetas que quiere crear" name="planet" style="width: 350px">
+    <select name="planets">
+        <option value="si" name="si">Habitable</option>
+        <option value="no" name="no">Inhabitable</option>
+    </select>
     <button name="submit">Buscar</button>
     <br><br>
     </form>
