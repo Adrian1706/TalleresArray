@@ -4,10 +4,11 @@
     <br>
     HTML;
     session_start();
-    $array = ["Sateline 1", "Satelite 2", "Satelite 3"];
-    if(isset($_POST)){
-        $newPlanet = $_POST["planet"];
-        array_push($array,$newPlanet);
-        echo join(", ", $array);
-    }
+    $array = ["Mercurio", "Venus", "Tierra",  "Marte",  "Jupiter",  "Saturno", "Urano", "Neptuno", "Pluton"];
+    echo "<br> <br>";
+    echo join(", ", $array);
+    echo "<br> <br>";
+    $reves = array_reverse($array);
+    echo join(", ", $reves);
+
 ?>
