@@ -4,13 +4,13 @@
     <br>
     HTML;
     session_start();
-    $array = ["Mercurio", "mercurio", "Venus", "venus", "Tierra", "tierra", "Marte", "marte", "Jupiter", "jupiter", "Saturno", "saturno", "Urano", "urano", "Neptuno", "neptuno", "Pluton", "pluton"];
-    if(isset($_POST["planet"])){
-        $planetas=$_POST["planet"];
-        if(in_array($planetas, $array)){
-            echo "<h1>$planetas</h1>", "<p> Este planeta existe en el sistema solar.</p>";
+    $array = ["Nave 1", "nave 1", "Nave 2", "nave 2", "Nave 3", "nave 3"];
+    if(isset($_POST["flota"])){
+        $naves=$_POST["flota"];
+        if(in_array($naves, $array)){
+            echo "<h1>$naves</h1>", "<p> Esta nave existe en mi flota.</p>";
         }else{
-            echo $planetas, "<p> Este planeta no existe en el sistema solar.</p>";
+            echo $naves, "<p> Esta nave no existe en mi flota.</p>";
         };
     };
 ?>
