@@ -4,9 +4,9 @@
     <br>
     HTML;
     session_start();
-    $array = ["Mercurio", "Venus", "Tierra",  "Marte",  "Jupiter",  "Saturno", "Urano", "Neptuno", "Pluton"];
-    $random = array_rand($array, 2);
-    if (isset($_POST['submit'])) { 
-        echo"El planeta que se eligio para la mision es: ", $array[$random[0]];
-    }
+    $array = ["especie1", "especie1", "especie2",  "especie3",  "especie4",  "especie4", "especie5"];
+    print_r($array);
+    echo "<br>";
+    $unicos = array_unique($array);
+    print_r ($unicos);
 ?>
