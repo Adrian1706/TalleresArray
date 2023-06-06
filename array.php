@@ -4,13 +4,9 @@
     <br>
     HTML;
     session_start();
-    $array = ["Nave 1", "nave 1", "Nave 2", "nave 2", "Nave 3", "nave 3"];
-    if(isset($_POST["flota"])){
-        $naves=$_POST["flota"];
-        if(in_array($naves, $array)){
-            echo "<h1>$naves</h1>", "<p> Esta nave existe en mi flota.</p>";
-        }else{
-            echo $naves, "<p> Esta nave no existe en mi flota.</p>";
-        };
-    };
+    $array = ["Mercurio", "Venus", "Tierra",  "Marte",  "Jupiter",  "Saturno", "Urano", "Neptuno", "Pluton"];
+    $random = array_rand($array, 2);
+    if (isset($_POST['submit'])) { 
+        echo"El planeta que se eligio para la mision es: ", $array[$random[0]];
+    }
 ?>
