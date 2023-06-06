@@ -1,7 +1,7 @@
 <?php
-    $array = ["Mercurio"=>37.8,"Venus"=> 90.5,"Marte"=> 37.86,"Jupiter"=> 252.96,"Saturno"=> 106.54,"Urano"=> 90.52,"Neptuno"=> 113.8];
-    function gravity ($grave){
-        echo number_format($grave*0.098,2) ,": gravedad real <br>";
+    $array = ['nave1'=>1, 'nave2'=>2, 'nave3'=>3, 'nave4'=>4];
+    function gravity ($masa){
+        echo array_sum($masa) ,": suma de todas las masas <br>";
     }
     array_walk($array,'gravity');
 ?>
