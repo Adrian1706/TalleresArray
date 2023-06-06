@@ -4,9 +4,15 @@
     <br>
     HTML;
     session_start();
-    $array = ["especie1", "especie1", "especie2",  "especie3",  "especie4",  "especie4", "especie5"];
+    $array = ["Mercurio", "Venus", "Tierra",  "Marte", "Saturno", "Urano", "Neptuno"];
+    $array2 = ["Mercurio", "Marte",  "Jupiter",  "Saturno", "Neptuno", "Pluton"];
+    echo "<h1>Primer Sistema</h1>";
     print_r($array);
     echo "<br>";
-    $unicos = array_unique($array);
-    print_r ($unicos);
+    echo "<h1>Segundo Sistema</h1>";
+    print_r($array2);
+    echo "<br>";
+    echo "<h1>Planetas En Común</h1>";
+    $comun = array_intersect($array, $array2);
+    print_r ($comun);
 ?>
