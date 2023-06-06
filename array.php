@@ -4,15 +4,10 @@
     <br>
     HTML;
     session_start();
-    $array = ["Mercurio", "Venus", "Tierra",  "Marte", "Saturno", "Urano", "Neptuno"];
-    $array2 = ["Mercurio", "Marte",  "Jupiter",  "Saturno", "Neptuno", "Pluton"];
-    echo "<h1>Primer Sistema</h1>";
-    echo join(", ", $array);
-    echo "<br>";
-    echo "<h1>Segundo Sistema</h1>";
-    echo join(", ", $array2);
-    echo "<br>";
-    echo "<h1>Planetas Únicos</h1>";
-    $unicos = array_diff($array, $array2);
-    echo join(", ", $unicos);
+    $array = ["Sateline 1", "Satelite 2", "Satelite 3"];
+    if(isset($_POST)){
+        $newPlanet = $_POST["planet"];
+        array_push($array,$newPlanet);
+        echo join(", ", $array);
+    }
 ?>
